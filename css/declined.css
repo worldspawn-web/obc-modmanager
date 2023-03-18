@@ -18,7 +18,8 @@
 
 .accordion-button:not(.collapsed) {
     background-color: #191a25;
-    color: var(--statusFail)
+    color: var(--statusFail);
+    box-shadow: none;
 }
 
 .icon-type {
