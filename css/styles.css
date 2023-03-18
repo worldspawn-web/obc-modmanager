@@ -166,3 +166,9 @@ a:visited {
 .status-careful {
     color: var(--statusCareful);
 }
+
+.new-uptext {
+    font-size: 12px;
+    vertical-align: text-top;
+    color: var(--statusSuccess)
+}
