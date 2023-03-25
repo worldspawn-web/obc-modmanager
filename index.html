@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETS Storage</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/activecount.js" defer></script>
 </head>
 
 <body>
@@ -19,6 +20,44 @@
         <button class="nav-button stmods" onclick=" location.href='https://stmods.org/euro_truck_simulator_2/'">STMods</button>
     </nav>
     <main>
+        <h1 class="active-score-header">Active Mods: <span id="active-score"></span></h1>
+        <div class="download-div">
+            <button class="download-btn" onclick=" location.href='https://disk.yandex.ru/d/zyzlKk5kCmTvog'">Download All</button>
+            <button class="download-btn" onclick=" location.href='https://steamcommunity.com/sharedfiles/filedetails/?id=2952192741'">Steam</button>
+        </div>
+        <!-- Mod -->
+        <section class="container-active">
+            <div class="container-active-position">
+                <div class="container-active-img">
+                    <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
+                    <img src="img-mods/miata.jpg" class="mod-img">
+                </div>
+                <a href="https://stmods.org/euro_truck_simulator_2/mods/mazda_mx_5_miata_by_mert_ir_i_for_ets2/"
+                    target="_blank">
+                    <p class="modname">Mazda MX-5 Miata<span class="new-uptext">NEW</span> </p>
+                </a>
+                <div class="container-active-info">
+                    <div class="container-active-info-parameter">
+                        <p>Version: </p>
+                        <p>Co-op: </p>
+                        <p>Handling: </p>
+                        <p>Animations: </p>
+                        <p>Quality: </p>
+                        <p>Tuning: </p>
+                        <p>Skoda Safe: </p>
+                    </div>
+                    <div class="container-active-info-status">
+                        <span class="active-info-2 status-uptodate">1.46</span>
+                        <span class="active-info-2">?</span>
+                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
+                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
+                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
+                        <span class="active-info-2 status-failure">✓</span>
+                        <span class="active-info-2 status-uptodate">✓</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Mod -->
         <section class="container-active">
             <div class="container-active-position">
@@ -155,35 +194,6 @@
         <section class="container-active">
             <div class="container-active-position">
                 <div class="container-active-img">
-                    <img src="img/weather.png" alt="car-category" title="Weather" class="icon-type">
-                    <img src="img-mods/frosty_winter.jpg" class="mod-img">
-                </div>
-                <a href="https://stmods.org/euro_truck_simulator_2/mods/frosty_winter_weather_mod_v6_1_by_grimes_for_euro_truck_simulator_2_v1_26/"
-                    target="_blank">
-                    <p class="modname modname-winter">Frosty Winter Weather Mod</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Quality: </p>
-                        <p>FPS: </p>
-                        <p>Size: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.46</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-careful">✓✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
                     <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
                     <img src="img-mods/cruiser_200.jpg" class="mod-img">
                 </div>
@@ -246,8 +256,8 @@
                 </div>
             </div>
         </section>
-         <!-- Mod -->
-         <section class="container-active">
+        <!-- Mod -->
+        <section class="container-active">
             <div class="container-active-position">
                 <div class="container-active-img">
                     <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
@@ -279,16 +289,15 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Mod -->
         <section class="container-active">
             <div class="container-active-position">
                 <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Weather" class="icon-type">
+                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
                     <img src="img-mods/no_barrier_collisions.jpg" class="mod-img">
                 </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1759879026"
-                    target="_blank">
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1759879026" target="_blank">
                     <p class="modname modname-other">No Barrier Collisions</p>
                 </a>
                 <div class="container-active-info">
@@ -313,11 +322,10 @@
         <section class="container-active">
             <div class="container-active-position">
                 <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Weather" class="icon-type">
+                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
                     <img src="img-mods/yandex-navigator-night.jpg" class="mod-img">
                 </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1777713125"
-                    target="_blank">
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1777713125" target="_blank">
                     <p class="modname modname-other">Yandex Navigator Night Version</p>
                 </a>
                 <div class="container-active-info">
@@ -342,11 +350,10 @@
         <section class="container-active">
             <div class="container-active-position">
                 <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Weather" class="icon-type">
+                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
                     <img src="img-mods/yandex-rus.jpg" class="mod-img">
                 </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1762588253"
-                    target="_blank">
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1762588253" target="_blank">
                     <p class="modname modname-other">Yandex Navigator Russian Voices for GPS</p>
                 </a>
                 <div class="container-active-info">
