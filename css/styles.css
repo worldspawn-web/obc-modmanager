@@ -226,3 +226,68 @@ a:visited {
     vertical-align: text-top;
     color: var(--statusSuccess)
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, .7);
+    outline: 1px solid red;
+    z-index: 10;
+}
+
+.dialog {
+    border: 2px solid var(--otherMod);
+    border-radius: 15px;
+    padding: 10rem 20rem;
+    background-color: transparent;
+    line-height: 3;
+    cursor: pointer;
+    transition: all ease .6s;
+}
+
+.dialog:hover {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.dialog:hover .modal-content-helper {
+    color: var(--winterMod);
+    text-decoration: underline;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    text-align: center;;
+    font-size: 2rem;
+}
+
+.modal-title {
+    color: var(--statusFail);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.modal-content {
+    color: white;
+    text-align: center;
+}
+
+.modal-content-helper {
+    transition: all ease .4s;
+}
+
+.currentversion {
+    color: var(--statusFail);
+}
+
+.latestversion {
+    color: var(--statusSuccess)
+}

@@ -8,9 +8,31 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.ico">
     <script src="js/activecount.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
+    <!-- Modal if version is outdated -->
+    <div class="modal">
+        <div class="dialog">
+            <header>
+                <h2 class="modal-title">Version is outdated!</h2>
+            </header>
+            <section class="modal-body">
+                <span class="modal-content">
+                    Current Version - <span class="currentversion"></span> (supposed to be - <span class="latestversion"></span>)
+                </span>
+                <br>
+                <span class="modal-content">
+                    Please contact <span class="status-uptodate">Worldspawn#1002</span> on Discord to start the mods compatibility test.
+                </span>
+                <br>
+                <span class="modal-content modal-content-helper">
+                    Click to continue
+                </span>
+            </section>
+        </div>
+    </div>
     <section class="header-section"></section>
     <!-- Navigation -->
     <nav>
