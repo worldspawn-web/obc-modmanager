@@ -6,4 +6,4 @@
 <hr>
 <h3>Total amount of tested mods: <span style="color: red;">49</span></h3>
 <h3>Total amount of active mods: <span style="color: green;">11</span></h3>
-<p>Last update: 25.03.2023</p>
+<p>Last update: 09.04.2023</p>
