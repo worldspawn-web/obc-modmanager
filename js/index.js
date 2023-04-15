@@ -1,5 +1,5 @@
 const latestVersion = 1.47;
-const currentVersion = 1.46;
+const currentVersion = 1.47;
 const modal = document.querySelector('.modal');
 let currentVersionModal = document.querySelector('.currentversion');
 let latestVersionModal = document.querySelector('.latestversion');
