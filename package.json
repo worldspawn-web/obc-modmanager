@@ -1,0 +1,22 @@
+{
+  "name": "worldspawn-web.github.io",
+  "version": "1.0.0",
+  "description": "<h1> Euro Truck Simulator Mod Storage </h1>\r <img src=\"img-mods/gls.jpg\" style=\"height: 400px;\"></img>\r <hr>\r <p>The reason for the creation of this project (if it can be called such) is a more competent storage and tracking of the currently used mods, as well as the introduction of accounting for knocked-out (deleted) mods.></p>\r <p>The project is also accompanied by a rating of proven mods and, for some, reviews.</p>\r <hr>\r <h3>Total amount of tested mods: <span style=\"color: red;\">53 (+2)</span></h3>\r <h3>Total amount of active mods: <span style=\"color: green;\">4 (-1)</span></h3>\r <p>Last update: 17.04.2023 (1.47)</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worldspawn-web/worldspawn-web.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/worldspawn-web/worldspawn-web.github.io/issues"
+  },
+  "homepage": "https://github.com/worldspawn-web/worldspawn-web.github.io#readme",
+  "dependencies": {
+    "eslint": "^8.38.0"
+  }
+}
