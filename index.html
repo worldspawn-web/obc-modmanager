@@ -1,311 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETS Storage</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico">
-    <script src="js/activecount.js" defer></script>
-    <script src="js/index.js" defer></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ETS2 Mods Storage</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <section class="header-section"></section>
-    <!-- Navigation -->
-    <nav>
-        <button class="nav-button" onclick=" location.href='index.html'">Active Mods</button>
-        <button class="nav-button" onclick=" location.href='disabled.html'">Disabled Mods</button>
-        <button class="nav-button" onclick=" location.href='fortest.html'">Waiting for Test</button>
-        <button class="nav-button status-failure" onclick=" location.href='declined.html'">Declined Mods</button>
-        <button class="nav-button stmods"
-            onclick=" location.href='https://stmods.org/euro_truck_simulator_2/'">STMods</button>
-    </nav>
-    <main>
-        <h1 class="active-score-header">Active Mods: <span id="active-score"></span></h1>
-        <div class="download-div">
-            <button class="download-btn" onclick=" location.href='https://drive.google.com/file/d/10oOpxwBu4sA7f7gQf-cbuakrELESGUzq/view?usp=sharing'">Download
-                All</button>
-            <button class="download-btn"
-                onclick=" location.href='https://steamcommunity.com/sharedfiles/filedetails/?id=2952192741'">Steam</button>
-        </div>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
-                    <img src="https://stmods.org/euro_truck_simulator_2/mods/ford_f150_raptor_2017_by_azorax_modding_for_ets2/ford_f150_raptor_2017_v1_9_by_azorax_modding_for_ets2_v1_44_x_img1.jpg?"
-                        class="mod-img">
-                </div>
-                <a href="https://stmods.org/euro_truck_simulator_2/mods/ford_f150_raptor_2017_by_azorax_modding_for_ets2/"
-                    target="_blank">
-                    <p class="modname">Ford F150 Raptor 2017 <span class="new-uptext">NEW</span></p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Handling: </p>
-                        <p>Animations: </p>
-                        <p>Quality: </p>
-                        <p>Tuning: </p>
-                        <p>Skoda Safe: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.47</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-careful">✓✓✓</span>
-                        <span class="active-info-2 status-careful">✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-careful">✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
-                    <img src="https://steamuserimages-a.akamaihd.net/ugc/2049736892940320911/25CA377AA6378F3C34737D2BBB7D47D03C9446E2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=false"
-                        class="mod-img">
-                </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2857542840" target="_blank">
-                    <p class="modname modname-other">Radar-Detector v2.0.6</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Quality: </p>
-                        <p>FPS: </p>
-                        <p>Size: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.47</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/map.png" alt="car-category" title="Vehicle" class="icon-type">
-                    <img src="img-mods/russianmap.jpg" class="mod-img">
-                </div>
-                <a href="http://truck-sim.club/topic/39491-rusmap-v2462-146x-upd-310123/" target="_blank">
-                    <p class="modname modname-other">RusMap v.46.2 [upd 31.01.23]
-                    </p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Quality: </p>
-                        <p>FPS: </p>
-                        <p>Size: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.47</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
-                    <img src="img-mods/fortuner.jpg" class="mod-img">
-                </div>
-                <a href="https://stmods.org/euro_truck_simulator_2/mods/toyota_fortuner_an160_by_ismail_kaan_for_ets2/"
-                    target="_blank">
-                    <p class="modname">Toyota Fortuner AN160</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Handling: </p>
-                        <p>Animations: </p>
-                        <p>Quality: </p>
-                        <p>Tuning: </p>
-                        <p>Skoda Safe: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.47</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-careful">✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
-                    <img src="img-mods/tahoe.png" class="mod-img">
-                </div>
-                <a href="https://stmods.org/euro_truck_simulator_2/mods/chevrolet_tahoe_2007_by_elaman_for_ets2/"
-                    target="_blank">
-                    <p class="modname">Chevrolet Tahoe 2007</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Handling: </p>
-                        <p>Animations: </p>
-                        <p>Quality: </p>
-                        <p>Tuning: </p>
-                        <p>Skoda Safe: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.47</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-careful">✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/car.png" alt="car-category" title="Vehicle" class="icon-type">
-                    <img src="img-mods/miata.jpg" class="mod-img">
-                </div>
-                <a href="https://stmods.org/euro_truck_simulator_2/mods/mazda_mx_5_miata_by_mert_ir_i_for_ets2/"
-                    target="_blank">
-                    <p class="modname">Mazda MX-5 Miata</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Handling: </p>
-                        <p>Animations: </p>
-                        <p>Quality: </p>
-                        <p>Tuning: </p>
-                        <p>Skoda Safe: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">1.47</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
-                    <img src="img-mods/no_barrier_collisions.jpg" class="mod-img">
-                </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1759879026" target="_blank">
-                    <p class="modname modname-other">No Barrier Collisions</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Quality: </p>
-                        <p>FPS: </p>
-                        <p>Size: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">Steam</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
-                    <img src="img-mods/yandex-navigator-night.jpg" class="mod-img">
-                </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1777713125" target="_blank">
-                    <p class="modname modname-other">Yandex Navigator Night Version</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Quality: </p>
-                        <p>FPS: </p>
-                        <p>Size: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">Steam</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mod -->
-        <section class="container-active">
-            <div class="container-active-position">
-                <div class="container-active-img">
-                    <img src="img/other.png" alt="car-category" title="Other" class="icon-type">
-                    <img src="img-mods/yandex-rus.jpg" class="mod-img">
-                </div>
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1762588253" target="_blank">
-                    <p class="modname modname-other">Yandex Navigator Russian Voices for GPS</p>
-                </a>
-                <div class="container-active-info">
-                    <div class="container-active-info-parameter">
-                        <p>Version: </p>
-                        <p>Co-op: </p>
-                        <p>Quality: </p>
-                        <p>FPS: </p>
-                        <p>Size: </p>
-                    </div>
-                    <div class="container-active-info-status">
-                        <span class="active-info-2 status-uptodate">Steam</span>
-                        <span class="active-info-2 status-uptodate">✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                        <span class="active-info-2 status-uptodate">✓✓✓✓✓</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+    <!-- NAVIGATION BAR -->
+    <ul class="nav nav-pills justify-content-center mt-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Disabled</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">On Testing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true">Banned</a>
+        </li>
+      </ul>
 
+    <!-- ACTIVE MODS ACCORDION -->
+    <div id="activemods">
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  <img class="mod-icon" src="img/car.png"> Nissan 350Z
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <img src="old/img-mods/350z.jpg" alt="" class="mod-img">
+                    <table class="table table-borderless mt-2">
+                        <tr>
+                            <td>Version</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                            <td>Animations</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Version</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                            <td>Tuning</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Quality</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                            <td>Sounds</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Handling</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                            <td>FPS</td>
+                            <td><span class="stats-rating">✓✓✓✓</span></td>
+                        </tr>
+                    </table>
+                    <div class="d-flex justify-content-center"><button type="button" class="btn btn-primary mod-download-btn">Download</button></div>
+                    
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>    
+    </div>
+    <div class="fixed-bottom d-flex justify-content-center">
+        <img src="img/cloud.svg"></img>
+        <span class="ms-2 activemods-counter">Active Mods: 6</span>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="./ts/index.ts"></script>
+</body>
 </html>
