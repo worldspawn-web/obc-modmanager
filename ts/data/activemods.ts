@@ -13,6 +13,7 @@ export const activeMods = [
       tuning: 2,
       sounds: 3,
       fps: 5,
+      filesize: 4,
     },
   },
 ];
