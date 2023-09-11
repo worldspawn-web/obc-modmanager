@@ -1,9 +1,17 @@
-<h1> Euro Truck Simulator Mod Storage </h1>
-<img src="img-mods/gls.jpg" style="height: 400px;"></img>
-<hr>
-<p>The reason for the creation of this project (if it can be called such) is a more competent storage and tracking of the currently used mods, as well as the introduction of accounting for knocked-out (deleted) mods.></p>
-<p>The project is also accompanied by a rating of proven mods and, for some, reviews.</p>
-<hr>
-<h3>Total amount of tested mods: <span style="color: red;">54 (+1)</span></h3>
-<h3>Total amount of active mods: <span style="color: green;">9 (+1)</span></h3>
-<p>Last update: 23.05.2023 (1.47)</p>
+## OBC Euro Truck Simulator 2: Storage
+
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/worldspawn-web/obc-ets2-storage/main)
+![GitHub repo size](https://img.shields.io/github/repo-size/worldspawn-web/obc-ets2-storage)
+![Current Version](https://img.shields.io/badge/ETS_Version-1.48-purple)
+
+This repository is a storage for Euro Truck Simulator 2 (ETS2) active mods in OBC Discord.
+
+##What's after that?
+
+- [ ] AutoModManager (Client & Server)
+- [ ] Site optimization with React.js
+
+### Links:
+
+[Discord](https://discord.gg/UjvjjMSCex)
+[STMods](https://stmods.org/euro_truck_simulator_2/)
