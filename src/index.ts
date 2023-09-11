@@ -172,7 +172,13 @@ const renderActiveMods = () => {
       activeModsContainer?.append(mainContainer);
     };
 
+    const updateActiveMods = () => {
+      const container = document.querySelector('.activemods-counter');
+      container!.textContent = `Active Mods: ${activeIndex}`;
+    };
+
     createDOMElements();
+    updateActiveMods();
   });
 
   const isVersionUpToDate = () => {
@@ -184,6 +190,7 @@ const renderActiveMods = () => {
         : version.classList.add('text-danger');
     });
   };
+
   isVersionUpToDate();
 };
 
