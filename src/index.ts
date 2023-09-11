@@ -1,4 +1,5 @@
 import { activeMods } from './data/activemods';
+import { other } from './data/other';
 
 const renderActiveMods = () => {
   let activeIndex = 0;
@@ -66,7 +67,7 @@ const renderActiveMods = () => {
       const versionRating = document.createElement('td');
       const versionRatingSpan = document.createElement('span');
       versionRatingSpan.textContent = version;
-      versionRatingSpan.classList.add('stats-rating');
+      versionRatingSpan.classList.add('stats-rating', 'version-rating');
       versionRating.append(versionRatingSpan);
 
       const animationsCell = document.createElement('td');
@@ -173,6 +174,17 @@ const renderActiveMods = () => {
 
     createDOMElements();
   });
+
+  const isVersionUpToDate = () => {
+    const modsVersion = document.querySelectorAll('.version-rating');
+    const { currentVersion } = other[0];
+    modsVersion.forEach((version) => {
+      version.textContent === currentVersion
+        ? version.classList.add('text-success')
+        : version.classList.add('text-danger');
+    });
+  };
+  isVersionUpToDate();
 };
 
 renderActiveMods();
