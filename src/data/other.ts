@@ -1,5 +1,5 @@
 export const other = [
   {
-    currentVersion: '1.47',
+    currentVersion: '1.48',
   },
 ];
