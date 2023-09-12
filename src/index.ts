@@ -1,6 +1,8 @@
 import { activeMods } from './data/activemods';
 import { other } from './data/other';
 
+import { statsChecker } from './statsChecker';
+
 const renderActiveMods = () => {
   let activeIndex = 0;
 
@@ -67,7 +69,7 @@ const renderActiveMods = () => {
       const versionRating = document.createElement('td');
       const versionRatingSpan = document.createElement('span');
       versionRatingSpan.textContent = version;
-      versionRatingSpan.classList.add('stats-rating', 'version-rating');
+      versionRatingSpan.classList.add('version-rating');
       versionRating.append(versionRatingSpan);
 
       const animationsCell = document.createElement('td');
@@ -189,3 +191,4 @@ const renderActiveMods = () => {
 };
 
 renderActiveMods();
+statsChecker();

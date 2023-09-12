@@ -1,0 +1,11 @@
+.stats-success {
+    color: var(--bs-success);
+}
+
+.stats-failure {
+    color: var(--bs-danger);
+}
+
+.stats-warning {
+    color: var(--bs-warning);
+}
