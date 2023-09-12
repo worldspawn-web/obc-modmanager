@@ -150,17 +150,11 @@ const renderActiveMods = () => {
       const endingDiv = document.createElement('div');
       endingDiv.classList.add('d-flex', 'justify-content-center');
 
-      const downloadButton = document.createElement('button');
+      const downloadButton = document.createElement('a');
       downloadButton.classList.add('btn', 'btn-primary', 'mod-download-btn');
-      downloadButton.setAttribute('type', 'button');
+      downloadButton.setAttribute('href', link);
+      downloadButton.setAttribute('target', '_blank');
       downloadButton.textContent = 'Download';
-      //
-      //  DYNAMIC LINK CURRENTLY UNSUPPORTED
-      //  TODO:
-      //        CREATE A FUNC THAT WILL HOOK EVERY DOWNLOAD BUTTON
-      //        PARSE THE VALUE FROM STATE
-      //        CREATE A LISTENER THAT WILL OPEN A NEW WINDOW ON CLICK
-      //
 
       endingDiv.append(downloadButton);
 
