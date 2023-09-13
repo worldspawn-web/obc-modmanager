@@ -1,5 +1,7 @@
-import { activeMods } from './data/activemods';
+import { activeMods } from './data/data-activemods';
 import { other } from './data/other';
+
+import { statsChecker } from './statsChecker';
 
 const renderActiveMods = () => {
   let activeIndex = 0;
@@ -67,7 +69,7 @@ const renderActiveMods = () => {
       const versionRating = document.createElement('td');
       const versionRatingSpan = document.createElement('span');
       versionRatingSpan.textContent = version;
-      versionRatingSpan.classList.add('stats-rating', 'version-rating');
+      versionRatingSpan.classList.add('version-rating');
       versionRating.append(versionRatingSpan);
 
       const animationsCell = document.createElement('td');
@@ -150,17 +152,11 @@ const renderActiveMods = () => {
       const endingDiv = document.createElement('div');
       endingDiv.classList.add('d-flex', 'justify-content-center');
 
-      const downloadButton = document.createElement('button');
+      const downloadButton = document.createElement('a');
       downloadButton.classList.add('btn', 'btn-primary', 'mod-download-btn');
-      downloadButton.setAttribute('type', 'button');
+      downloadButton.setAttribute('href', link);
+      downloadButton.setAttribute('target', '_blank');
       downloadButton.textContent = 'Download';
-      //
-      //  DYNAMIC LINK CURRENTLY UNSUPPORTED
-      //  TODO:
-      //        CREATE A FUNC THAT WILL HOOK EVERY DOWNLOAD BUTTON
-      //        PARSE THE VALUE FROM STATE
-      //        CREATE A LISTENER THAT WILL OPEN A NEW WINDOW ON CLICK
-      //
 
       endingDiv.append(downloadButton);
 
@@ -195,3 +191,4 @@ const renderActiveMods = () => {
 };
 
 renderActiveMods();
+statsChecker();

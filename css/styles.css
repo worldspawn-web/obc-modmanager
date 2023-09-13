@@ -19,7 +19,3 @@ tr > td:nth-child(odd) {
 .mod-download-btn {
     margin: 0 auto;
 }
-
-.stats-rating {
-    color: var(--bs-success);
-}
