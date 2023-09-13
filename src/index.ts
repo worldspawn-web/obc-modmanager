@@ -1,4 +1,4 @@
-import { activeMods } from './data/activemods';
+import { activeMods } from './data/data-activemods';
 import { other } from './data/other';
 
 import { statsChecker } from './statsChecker';
