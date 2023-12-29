@@ -1,3 +1,2 @@
-node_modules/
-old/
-.vscode/
+/node_modules/
+.vscode

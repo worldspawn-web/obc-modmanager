@@ -1,30 +1,19 @@
 {
-  "name": "worldspawn-web.github.io",
+  "name": "obc-ets2-storage",
   "version": "1.0.0",
-  "description": "<h1> Euro Truck Simulator Mod Storage </h1>\r <img src=\"img-mods/gls.jpg\" style=\"height: 400px;\"></img>\r <hr>\r <p>The reason for the creation of this project (if it can be called such) is a more competent storage and tracking of the currently used mods, as well as the introduction of accounting for knocked-out (deleted) mods.></p>\r <p>The project is also accompanied by a rating of proven mods and, for some, reviews.</p>\r <hr>\r <h3>Total amount of tested mods: <span style=\"color: red;\">53 (+2)</span></h3>\r <h3>Total amount of active mods: <span style=\"color: green;\">4 (-1)</span></h3>\r <p>Last update: 17.04.2023 (1.47)</p>",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/worldspawn-web/worldspawn-web.github.io.git"
+    "url": "git+https://github.com/worldspawn-web/obc-ets2-storage.git"
   },
-  "author": "",
+  "author": "Worldspawn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/worldspawn-web/worldspawn-web.github.io/issues"
+    "url": "https://github.com/worldspawn-web/obc-ets2-storage/issues"
   },
-  "homepage": "https://github.com/worldspawn-web/worldspawn-web.github.io#readme",
-  "dependencies": {
-    "eslint": "^8.38.0",
-    "lodash": "^4.17.21",
-    "typescript": "^5.2.2"
-  },
-  "devDependencies": {
-    "axios": "^1.5.0",
-    "ts-loader": "^9.4.4",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
-  }
+  "homepage": "https://github.com/worldspawn-web/obc-ets2-storage#readme"
 }
