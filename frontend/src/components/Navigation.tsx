@@ -11,10 +11,10 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Active</Nav.Link>
-            <Nav.Link href="#link">Disabled</Nav.Link>
-            <Nav.Link href="#link">In Queue</Nav.Link>
-            <Nav.Link href="#link">Declined</Nav.Link>
+            <Nav.Link href="/active">Active</Nav.Link>
+            <Nav.Link href="/disabled">Disabled</Nav.Link>
+            <Nav.Link href="/testing">In Queue</Nav.Link>
+            <Nav.Link href="/declined">Declined</Nav.Link>
             <NavDropdown title="Other" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://stmods.org/">
                 Stmods
@@ -26,7 +26,7 @@ function Navigation() {
                 NexusMods
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" disabled>
+              <NavDropdown.Item href="#" disabled>
                 Mod Manager (Client)
               </NavDropdown.Item>
             </NavDropdown>
