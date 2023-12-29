@@ -1,0 +1,7 @@
+:root {
+  --obc-color: #ff9d00;
+}
+
+#navbrand {
+  color: var(--obc-color);
+}

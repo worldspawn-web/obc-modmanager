@@ -1,10 +1,13 @@
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import "./Navigation.css";
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">OBC Storage</Navbar.Brand>
+        <Navbar.Brand href="#home" id="navbrand">
+          OBC Storage
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -13,11 +16,17 @@ function Navigation() {
             <Nav.Link href="#link">In Queue</Nav.Link>
             <Nav.Link href="#link">Declined</Nav.Link>
             <NavDropdown title="Other" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">StMods</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">ZEmods</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">NexusMods</NavDropdown.Item>
+              <NavDropdown.Item href="https://stmods.org/">
+                Stmods
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://zemods.ru/">
+                ZEmods
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://www.nexusmods.com/eurotrucksimulator2">
+                NexusMods
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="#action/3.4" disabled>
                 Mod Manager (Client)
               </NavDropdown.Item>
             </NavDropdown>
