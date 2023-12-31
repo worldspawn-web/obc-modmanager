@@ -3,13 +3,8 @@ import modsStore from "../store/tempMods";
 import cn from "classnames";
 import "./RenderActiveMods.css";
 import RenderTrustBadge from "./RenderTrustBadge";
-import RenderQualityBadge from "./RenderQualityBadge";
 import RenderVersionBadge from "./RenderVersionBadge";
-
-// TODO: REFACTOR THIS!
-// # SEPARATE THE CN FUNCTION
-// # SEPARATE LIST LOGIC TO ADDITIONAL COMPONENT
-// # OPTIMIZE NAMING
+import RenderSelectionList from "./RenderSelectionList";
 
 function RenderActiveMods() {
   const modsData = modsStore;
@@ -31,7 +26,12 @@ function RenderActiveMods() {
     return (
       <Col key={id}>
         <Card className="mt-4 mb-4 active-mod-card">
-          <Card.Img variant="top" src={images["front-view"]} className="mb-1" />
+          {/* TODO: Uncontrollable Carousel */}
+          <Card.Img
+            variant="top"
+            src={images["front-view"]}
+            className="mb-1 mod-img"
+          />
           <Card.Body>
             <Card.Title>
               <RenderTrustBadge trustFactor={trust} />
@@ -42,51 +42,26 @@ function RenderActiveMods() {
             {/* Stats */}
 
             <ListGroup as="ol" className="mb-4">
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start"
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">Quality</div>
-                </div>
-                <RenderQualityBadge quality={stats[0].quality} />
-              </ListGroup.Item>
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start"
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">Handling</div>
-                </div>
-                <RenderQualityBadge quality={stats[0].handling} />
-              </ListGroup.Item>
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start"
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">Tuning</div>
-                </div>
-                <RenderQualityBadge quality={stats[0].tuning} />
-              </ListGroup.Item>
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start"
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">Size</div>
-                </div>
-                <RenderQualityBadge quality={stats[0].size} />
-              </ListGroup.Item>
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start"
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">FPS</div>
-                </div>
-                <RenderQualityBadge quality={stats[0].fps} />
-              </ListGroup.Item>
+              <RenderSelectionList
+                listname="Quality"
+                qualityStatus={stats[0].quality}
+              />
+              <RenderSelectionList
+                listname="Handling"
+                qualityStatus={stats[0].handling}
+              />
+              <RenderSelectionList
+                listname="Tuning"
+                qualityStatus={stats[0].tuning}
+              />
+              <RenderSelectionList
+                listname="Size"
+                qualityStatus={stats[0].size}
+              />
+              <RenderSelectionList
+                listname="FPS"
+                qualityStatus={stats[0].fps}
+              />
               <ListGroup.Item
                 as="li"
                 className="d-flex justify-content-between align-items-start"
