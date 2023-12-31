@@ -4,9 +4,20 @@
 
 .active-mod-card {
   transition: all ease 0.3s;
+  min-height: 700px;
+  max-height: 700px;
 }
 
 .active-mod-card:hover {
   transform: scale(1.02);
   background-color: var(--bs-gray-dark);
+}
+
+.mod-img {
+  min-height: 250px;
+  width: 300px;
+}
+
+.mod-header {
+  min-height: 50px;
 }
