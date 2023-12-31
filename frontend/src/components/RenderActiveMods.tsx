@@ -2,10 +2,9 @@ import { Col, Card, Badge, ListGroup, Button } from "react-bootstrap";
 import modsStore from "../store/tempMods";
 import cn from "classnames";
 import "./RenderActiveMods.css";
+import RenderTrustBadge from "./RenderTrustBadge";
 
 // TODO: REFACTOR THIS!
-// # DESTRUCTURE JSON KEYS
-// # CHANGE THE ITERATION WAY
 // # SEPARATE THE CN FUNCTION
 // # SEPARATE LIST LOGIC TO ADDITIONAL COMPONENT
 // # OPTIMIZE NAMING
@@ -37,15 +36,7 @@ function RenderActiveMods() {
           />
           <Card.Body>
             <Card.Title>
-              <Badge
-                bg={cn({
-                  success: trust === "New",
-                  primary: trust === "Trusted",
-                  warning: trust === "Unstable",
-                })}
-              >
-                {trust}
-              </Badge>
+              <RenderTrustBadge trustFactor={trust} />
               <div className="mt-2 mb-3 mod-header">{name}</div>
             </Card.Title>
 
