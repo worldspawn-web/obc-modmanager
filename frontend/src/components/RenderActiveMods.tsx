@@ -3,6 +3,8 @@ import modsStore from "../store/tempMods";
 import cn from "classnames";
 import "./RenderActiveMods.css";
 import RenderTrustBadge from "./RenderTrustBadge";
+import RenderQualityBadge from "./RenderQualityBadge";
+import RenderVersionBadge from "./RenderVersionBadge";
 
 // TODO: REFACTOR THIS!
 // # SEPARATE THE CN FUNCTION
@@ -15,12 +17,12 @@ function RenderActiveMods() {
     const {
       id,
       name,
-      // version,
+      version,
       link,
+      // TODO: IF TYPE IS NOT VEHICLE -> RENDER DIFFERENT LIST ITEMS
+      // # quality, size, coop, fps
       // type,
-      // workshop,
-      // coop,
-      // filesize,
+      filesize,
       trust,
       images,
       stats,
@@ -29,14 +31,11 @@ function RenderActiveMods() {
     return (
       <Col key={id}>
         <Card className="mt-4 mb-4 active-mod-card">
-          <Card.Img
-            variant="top"
-            src={images[0]["front-view"]}
-            className="mb-1"
-          />
+          <Card.Img variant="top" src={images["front-view"]} className="mb-1" />
           <Card.Body>
             <Card.Title>
               <RenderTrustBadge trustFactor={trust} />
+              <RenderVersionBadge version={version} />
               <div className="mt-2 mb-3 mod-header">{name}</div>
             </Card.Title>
 
@@ -50,16 +49,7 @@ function RenderActiveMods() {
                 <div className="ms-2 me-auto">
                   <div className="fw-bold">Quality</div>
                 </div>
-                <Badge
-                  bg={cn({
-                    success: stats[0].quality >= 4,
-                    secondary: stats[0].quality === 3,
-                    danger: stats[0].quality <= 2,
-                  })}
-                  pill
-                >
-                  {stats[0].quality}
-                </Badge>
+                <RenderQualityBadge quality={stats[0].quality} />
               </ListGroup.Item>
               <ListGroup.Item
                 as="li"
@@ -68,16 +58,7 @@ function RenderActiveMods() {
                 <div className="ms-2 me-auto">
                   <div className="fw-bold">Handling</div>
                 </div>
-                <Badge
-                  bg={cn({
-                    success: stats[0].handling >= 4,
-                    secondary: stats[0].handling === 3,
-                    danger: stats[0].handling <= 2,
-                  })}
-                  pill
-                >
-                  {stats[0].handling}
-                </Badge>
+                <RenderQualityBadge quality={stats[0].handling} />
               </ListGroup.Item>
               <ListGroup.Item
                 as="li"
@@ -86,16 +67,7 @@ function RenderActiveMods() {
                 <div className="ms-2 me-auto">
                   <div className="fw-bold">Tuning</div>
                 </div>
-                <Badge
-                  bg={cn({
-                    success: stats[0].tuning >= 4,
-                    secondary: stats[0].tuning === 3,
-                    danger: stats[0].tuning <= 2,
-                  })}
-                  pill
-                >
-                  {stats[0].tuning}
-                </Badge>
+                <RenderQualityBadge quality={stats[0].tuning} />
               </ListGroup.Item>
               <ListGroup.Item
                 as="li"
@@ -104,16 +76,16 @@ function RenderActiveMods() {
                 <div className="ms-2 me-auto">
                   <div className="fw-bold">Size</div>
                 </div>
-                <Badge
-                  bg={cn({
-                    success: stats[0].size >= 4,
-                    secondary: stats[0].size === 3,
-                    danger: stats[0].size <= 2,
-                  })}
-                  pill
-                >
-                  {stats[0].size}
-                </Badge>
+                <RenderQualityBadge quality={stats[0].size} />
+              </ListGroup.Item>
+              <ListGroup.Item
+                as="li"
+                className="d-flex justify-content-between align-items-start"
+              >
+                <div className="ms-2 me-auto">
+                  <div className="fw-bold">FPS</div>
+                </div>
+                <RenderQualityBadge quality={stats[0].fps} />
               </ListGroup.Item>
               <ListGroup.Item
                 as="li"
@@ -129,7 +101,7 @@ function RenderActiveMods() {
                   })}
                   pill
                 >
-                  {stats[0].coop ? "Good" : "Bad"}
+                  {stats[0].coop ? "Compatible" : "Unstable"}
                 </Badge>
               </ListGroup.Item>
               <Button
@@ -138,7 +110,7 @@ function RenderActiveMods() {
                 href={link}
                 target="_blank"
               >
-                Download
+                Download ({filesize} mb)
               </Button>
             </ListGroup>
           </Card.Body>
