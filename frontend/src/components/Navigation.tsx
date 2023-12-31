@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <Navbar bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home" id="navbrand">
+        <Navbar.Brand href="/" id="navbrand">
           OBC Storage
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
