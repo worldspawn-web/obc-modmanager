@@ -1,5 +1,5 @@
 import { ListGroup } from "react-bootstrap";
-import RenderQualityBadge from "./RenderQualityBadge";
+import RenderQualityBadge from "./Badges/RenderQualityBadge";
 
 interface RenderSelectionListProps
   extends React.HTMLAttributes<HTMLDivElement> {

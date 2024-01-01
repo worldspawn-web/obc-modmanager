@@ -2,8 +2,8 @@ import { Col, Card, Badge, ListGroup, Button } from "react-bootstrap";
 import modsStore from "../store/tempMods";
 import cn from "classnames";
 import "./RenderActiveMods.css";
-import RenderTrustBadge from "./RenderTrustBadge";
-import RenderVersionBadge from "./RenderVersionBadge";
+import RenderTrustBadge from "./Badges/RenderTrustBadge";
+import RenderVersionBadge from "./Badges/RenderVersionBadge";
 import RenderSelectionList from "./RenderSelectionList";
 
 function RenderActiveMods() {
