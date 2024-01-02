@@ -16,7 +16,7 @@ function RenderActiveMods() {
       link,
       // TODO: IF TYPE IS NOT VEHICLE -> RENDER DIFFERENT LIST ITEMS
       // # quality, size, coop, fps
-      // type,
+      type,
       filesize,
       trust,
       images,
@@ -25,7 +25,16 @@ function RenderActiveMods() {
 
     return (
       <Col key={id}>
-        <Card className="mt-4 mb-4 active-mod-card">
+        <Card
+          className={cn({
+            "mt-4": true,
+            "mb-5": true,
+            "active-mod-card": true,
+            "mod-vehicle": type === "bus" || type === "car",
+            "mod-graphics": type === "weather" || type === "graphics",
+            "mod-other": type === "other",
+          })}
+        >
           {/* TODO: Uncontrollable Carousel */}
           <Card.Img
             variant="top"
