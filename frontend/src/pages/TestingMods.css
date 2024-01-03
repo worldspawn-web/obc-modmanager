@@ -1,0 +1,16 @@
+.split-screen {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-screen {
+  width: 50%;
+}
+
+.right-screen {
+  width: 50;
+}
+
+.mod-author {
+  color: var(--bs-warning);
+}
