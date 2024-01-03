@@ -1,9 +1,11 @@
 import { Container, Row } from "react-bootstrap";
+
 import Navigation from "../components/Navigation";
-import "./Home.css";
-import "./ActiveMods.css";
 import RenderActiveMods from "../components/RenderActiveMods";
 import ActiveModsStats from "../components/ActiveModsStats";
+
+import "./Home.css";
+import "./ActiveMods.css";
 
 const ActiveMods = () => {
   return (
