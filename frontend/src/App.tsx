@@ -4,8 +4,10 @@ import { Spinner } from "react-bootstrap";
 
 import Home from "./pages/Home";
 import ActiveMods from "./pages/ActiveMods.tsx";
+import TestingMods from "./pages/TestingMods.tsx";
 
 function App() {
+  // consider refactoring
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -19,9 +21,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="active" element={<ActiveMods />} />
-          {/* <Route path="disabled" element={<DisabledMods />} />
           <Route path="testing" element={<TestingMods />} />
-          <Route path="declined" element={<DeclinedMods />} />
+          {/* <Route path="declined" element={<DeclinedMods />} />
           <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </Suspense>
