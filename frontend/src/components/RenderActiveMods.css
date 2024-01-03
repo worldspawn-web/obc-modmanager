@@ -21,3 +21,27 @@
 .mod-header {
   min-height: 50px;
 }
+
+.progress-dot-container {
+  margin: 1rem 1rem 0 1rem;
+  align-items: center;
+}
+
+.progress-dot {
+  height: 0.5rem;
+}
+
+.progress-dot-success {
+  filter: invert(41%) sepia(12%) saturate(4299%) hue-rotate(109deg)
+    brightness(92%) contrast(80%);
+}
+
+.progress-dot-warning {
+  filter: invert(55%) sepia(39%) saturate(2903%) hue-rotate(350deg)
+    brightness(102%) contrast(102%);
+}
+
+.progress-dot-danger {
+  filter: invert(43%) sepia(96%) saturate(5284%) hue-rotate(337deg)
+    brightness(91%) contrast(89%);
+}

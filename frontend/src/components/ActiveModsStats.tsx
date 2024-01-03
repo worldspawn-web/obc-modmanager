@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const ActiveModsStats = () => {
@@ -25,7 +25,7 @@ const ActiveModsStats = () => {
             animated
             variant="success"
             now={vehicleLengthPerc}
-            label={`Vehicles - ${vehicleLengthPerc}%`}
+            label={`${vehicleLengthPerc}%`}
             key={1}
           />
           <ProgressBar
@@ -33,7 +33,7 @@ const ActiveModsStats = () => {
             animated
             variant="warning"
             now={graphicsLengthPerc}
-            label={`Graphics - ${graphicsLengthPerc}%`}
+            label={`${graphicsLengthPerc}%`}
             key={2}
           />
           <ProgressBar
@@ -41,10 +41,27 @@ const ActiveModsStats = () => {
             animated
             variant="danger"
             now={otherLengthPerc}
-            label={`Other - ${otherLengthPerc}%`}
+            label={`${otherLengthPerc}%`}
             key={3}
           />
         </ProgressBar>
+        <div className="progress-dot-container">
+          <span>Vehicles</span>
+          <Image
+            src="../src/assets/dot.svg"
+            className="progress-dot progress-dot-success mx-3 "
+          ></Image>
+          <span>Graphics</span>
+          <Image
+            src="../src/assets/dot.svg"
+            className="progress-dot progress-dot-warning mx-3"
+          ></Image>
+          <span>Other</span>
+          <Image
+            src="../src/assets/dot.svg"
+            className="progress-dot progress-dot-danger mx-3"
+          ></Image>
+        </div>
       </Container>
     </>
   );
