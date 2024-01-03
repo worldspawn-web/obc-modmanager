@@ -1,25 +1,29 @@
-import { Container, Image } from "react-bootstrap";
+import { Container, Image, Button } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const ActiveModsStats = () => {
   // consider refactoring into one func -> calling with diff parameters
   const totalMods = document.querySelectorAll(".active-mod-card").length;
-  const oneModPerc = 100 / totalMods;
-
   const vehicleLength = document.querySelectorAll(".mod-vehicle").length;
-  const vehicleLengthPerc = Math.floor(vehicleLength * oneModPerc);
-
   const graphicsLength = document.querySelectorAll(".mod-graphics").length;
-  const graphicsLengthPerc = Math.floor(graphicsLength * oneModPerc);
-
   const otherLength = document.querySelectorAll(".mod-other").length;
-  const otherLengthPerc = Math.floor(otherLength * oneModPerc);
+
+  const roundPerc = (length: number): number => {
+    return Math.round(length * (100 / totalMods));
+  };
+
+  const vehicleLengthPerc: number = roundPerc(vehicleLength);
+  const graphicsLengthPerc: number = roundPerc(graphicsLength);
+  const otherLengthPerc: number = roundPerc(otherLength);
 
   return (
     <>
       <Container id="mods-counter" className="mt-4">
         <h2>Total amount of active mods: {totalMods}</h2>
-        <ProgressBar>
+        <Button className="my-2" variant="outline-success" disabled>
+          Download All (Coming Soon)
+        </Button>
+        <ProgressBar className="mt-2">
           <ProgressBar
             striped
             animated
