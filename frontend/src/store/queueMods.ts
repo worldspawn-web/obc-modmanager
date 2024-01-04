@@ -10,6 +10,7 @@ interface Mod {
   type: string;
   filesize: number;
   image: string;
+  declineReasons?: string[];
 }
 
 const queueStore: Mod[] = [
@@ -50,13 +51,14 @@ const queueStore: Mod[] = [
   },
   {
     id: 3,
-    status: "Declined",
+    status: "declined",
     name: "VAZ 2107",
     version: "1.49",
     author: "AJIEHA",
     link: "https://stmods.org/euro_truck_simulator_2/mods/vaz_2107_pererabotka_by_ajieha_for_ets2/",
     type: "car",
     filesize: 61.1,
+    declineReasons: ["Brakes are way too weak.", "Overall bad handling."],
     image:
       "https://stmods.org/euro_truck_simulator_2/mods/vaz_2107_pererabotka_by_ajieha_for_ets2/vaz_2107_pererabotka_by_ajieha_for_ets2_img1.jpg?6579856753013",
   },
