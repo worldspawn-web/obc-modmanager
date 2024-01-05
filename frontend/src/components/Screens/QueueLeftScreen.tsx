@@ -5,18 +5,20 @@ import {
   ListGroup,
   ListGroupItem,
   Image,
+  Col,
+  Row,
 } from "react-bootstrap";
 import queueStore from "../../store/queueMods";
 
 const queueMods = queueStore.filter((mod) => mod.status === "queue");
 
-const QueueLeftScreen = () => {
+const QueueModCards = () => {
   return queueMods.map((mod) => {
     const { name, version, author, link, filesize, image } = mod;
 
     return (
-      <>
-        <Card data-bs-theme="dark" className="mx-4 my-4 queue-card">
+      <Col className="pt-2">
+        <Card data-bs-theme="dark" className="my-2 queue-card">
           <Card.Header>{name}</Card.Header>
           <Card.Body>
             <Card.Img src={image} className="queue-img" />
@@ -47,9 +49,17 @@ const QueueLeftScreen = () => {
             </Stack>
           </Card.Body>
         </Card>
-      </>
+      </Col>
     );
   });
+};
+
+const QueueLeftScreen = () => {
+  return (
+    <Row xs={1} md={2} className="g-4">
+      <QueueModCards />
+    </Row>
+  );
 };
 
 export default QueueLeftScreen;

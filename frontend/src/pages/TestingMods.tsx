@@ -11,11 +11,11 @@ const TestingMods = () => {
       <Navigation />
       <Container>
         <div className="split-screen">
-          <div className="left-screen py-4">
+          <div className="left-screen py-4 px-4">
             <h2 className="screen-header mx-4">Mods in Queue:</h2>
             <QueueLeftScreen />
           </div>
-          <div className="right-screen py-4">
+          <div className="right-screen py-4 px-4">
             <h2 className="screen-header mx-4">Declined Mods:</h2>
             <div className="declined-mods">
               <QueueRightScreen />
