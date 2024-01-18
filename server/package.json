@@ -1,0 +1,18 @@
+{
+  "name": "modmanager_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "Worldspawn",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "json-server": "^1.0.0-alpha.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
