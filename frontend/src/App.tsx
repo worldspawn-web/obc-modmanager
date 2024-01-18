@@ -1,33 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect, Suspense } from "react";
-import { Spinner } from "react-bootstrap";
-
-import Home from "./pages/Home";
-import ActiveMods from "./pages/ActiveMods.tsx";
-import TestingMods from "./pages/TestingMods.tsx";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 function App() {
-  // consider refactoring
-  const [loading, setLoading] = useState(true);
+  const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    setLoading(false);
-  }, []);
-
-  // TODO: FIX SUSPENSE
   return (
-    <BrowserRouter>
-      <Suspense fallback={<Spinner animation="grow" />}>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="active" element={<ActiveMods />} />
-          <Route path="testing" element={<TestingMods />} />
-          {/* <Route path="declined" element={<DeclinedMods />} />
-          <Route path="*" element={<NotFound />} /> */}
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
-  );
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
 
-export default App;
+export default App
