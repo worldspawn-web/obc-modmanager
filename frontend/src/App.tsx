@@ -1,11 +1,10 @@
-import MainPage from './pages/MainPage';
+import { Theme } from '@radix-ui/themes';
+import { Router } from './router';
 
-function App() {
+export default function App() {
   return (
-    <body>
-      <MainPage />
-    </body>
+    <Theme appearance="dark">
+      <Router />
+    </Theme>
   );
 }
-
-export default App;
