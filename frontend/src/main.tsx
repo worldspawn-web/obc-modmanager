@@ -6,6 +6,7 @@ import App from './App.tsx';
 import './main.scss';
 import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
