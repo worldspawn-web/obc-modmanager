@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@radix-ui/themes": "^2.0.3",
+    "bootstrap": "^5.3.2",
     "classnames": "^2.5.1",
     "embla-carousel-react": "^7.1.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "recharts": "^2.10.4"

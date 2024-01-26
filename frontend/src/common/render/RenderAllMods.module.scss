@@ -1,0 +1,18 @@
+.card__image {
+  height: 175px;
+  width: 280px;
+}
+
+.card-body {
+  justify-content: space-between;
+}
+
+.card {
+  margin: 0 10px;
+  transition: 0.3s all ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 5px 15px #302186);
+}

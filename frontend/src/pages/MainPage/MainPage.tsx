@@ -1,16 +1,13 @@
-import { Container, Flex, Grid, Heading } from '@radix-ui/themes';
+import { Container, Grid, Heading } from '@radix-ui/themes';
 
 import styles from './MainPage.module.scss';
-import { OBCLogo } from '../../common';
+import { Header } from '../../common/header/Header';
 
 export const MainPage = () => {
   return (
     <div className={styles.page}>
       <Container>
-        <Flex gap="3" justify="between" align="center" mt="3">
-          <OBCLogo />
-          <span>OBC ModManager</span>
-        </Flex>
+        <Header />
         <Container pt="6">
           <Heading align="center" mb="6">
             Welcome to the OBC Mod Manager!
@@ -25,7 +22,7 @@ export const MainPage = () => {
             mt="8"
             mb="8"
           >
-            <a href="/ets">
+            <a href="/ets2">
               <img
                 className={styles.category}
                 src="../src/icons/ets.png"
