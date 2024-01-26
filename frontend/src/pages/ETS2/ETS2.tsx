@@ -1,8 +1,9 @@
-import { Box, Container, Tabs, Text } from '@radix-ui/themes';
+import { Box, Container, Grid, Tabs, Text } from '@radix-ui/themes';
 import { Header } from '../../common/header/Header';
 
 // import styles from './ETS2.module.scss';
 import { ImagesCarousel } from '../../common';
+import RenderAllMods from '../../common/render/RenderAllMods';
 
 export const ETS2 = () => {
   return (
@@ -22,7 +23,7 @@ export const ETS2 = () => {
 
           <Box px="4" pt="3" pb="2">
             <Tabs.Content value="all">
-              <Text size="2">Make changes to your account.</Text>
+              <Grid>{RenderAllMods()}</Grid>
             </Tabs.Content>
 
             <Tabs.Content value="vehicles">
