@@ -1,11 +1,15 @@
 import { Button, Card } from 'react-bootstrap';
 import modsStore from '../../data/mods';
-import { Badge, Popover } from '@radix-ui/themes';
+import { Badge, Dialog, Flex } from '@radix-ui/themes';
 import RenderVehicleStats from '../stats/RenderVehicleStats';
+
+import styles from './RenderAllMods.module.scss';
+import { Link } from 'react-router-dom';
 
 const RenderAllMods = () => {
   return modsStore.ets2.map((mod) => {
     const {
+      id,
       // type,
       name,
       link,
@@ -17,29 +21,51 @@ const RenderAllMods = () => {
       image,
     } = mod;
     return (
-      <Card className="m-4" style={{ width: '18rem' }} data-bs-theme="dark">
-        <Card.Img variant="top" src={image} />
-        <Card.Body>
-          {trusted && (
-            <Badge mb="2" color="green">
-              Trusted
-            </Badge>
-          )}
-          <Badge ml="2">{version}</Badge>
-          <Card.Title>{name}</Card.Title>
-          <Button variant="success" href={link} className="mr-4">
-            STMods
-          </Button>
-        </Card.Body>
-        <Popover.Root>
-          <Popover.Trigger>
-            <Button variant="secondary">Stats</Button>
-          </Popover.Trigger>
-          <Popover.Content style={{ width: '17rem' }}>
-            {RenderVehicleStats(stats)}
-          </Popover.Content>
-        </Popover.Root>
-      </Card>
+      <Dialog.Root>
+        <Dialog.Trigger>
+          <Card
+            id={`card-${id}`}
+            className={styles.card}
+            style={{ width: '18rem' }}
+            data-bs-theme="dark"
+          >
+            <Card.Img
+              variant="top"
+              src={image}
+              className={styles.card__image}
+            />
+            <Card.Body>
+              {trusted && (
+                <Badge mb="2" mr="2" color="green">
+                  Trusted
+                </Badge>
+              )}
+              <Badge>{version}</Badge>
+              <Card.Title>{name}</Card.Title>
+            </Card.Body>
+          </Card>
+        </Dialog.Trigger>
+
+        <Dialog.Content style={{ maxWidth: 450 }}>
+          <Dialog.Title>{name}</Dialog.Title>
+          <Dialog.Description size="2" mb="4">
+            Vehicle Stats:
+          </Dialog.Description>
+
+          {RenderVehicleStats(stats)}
+
+          <Flex gap="3" mt="4" justify="end">
+            <Dialog.Close>
+              <Button variant="soft" color="gray">
+                Go Back
+              </Button>
+            </Dialog.Close>
+            <Link to={link}>
+              <Button>Download</Button>
+            </Link>
+          </Flex>
+        </Dialog.Content>
+      </Dialog.Root>
     );
   });
 };
