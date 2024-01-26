@@ -23,7 +23,9 @@ export const ETS2 = () => {
 
           <Box px="4" pt="3" pb="2">
             <Tabs.Content value="all">
-              <Grid>{RenderAllMods()}</Grid>
+              <Grid mt="4" mb="2" gap="6" columns="3" justify="start">
+                {RenderAllMods()}
+              </Grid>
             </Tabs.Content>
 
             <Tabs.Content value="vehicles">
