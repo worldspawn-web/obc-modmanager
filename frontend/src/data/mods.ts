@@ -20,7 +20,8 @@ const modsStore = {
           coop: true,
         },
       ],
-      images: ['', '', ''],
+      image:
+        'https://stmods.org/euro_truck_simulator_2/mods/bentley_bentayga_startech_2017_by_dn_modding_for_ets2/bentley_bentayga_startech_2017_by_dn_modding_for_ets2_img1.jpg?',
     },
   ],
   beamng: [
