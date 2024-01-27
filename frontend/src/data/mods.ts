@@ -115,6 +115,26 @@ const modsStore = {
       image:
         'https://stmods.org/euro_truck_simulator_2/mods/porsche_cayenne_turbo_2022_by_dn_modding_for_ets2/porsche_cayenne_turbo_2022_by_dn_modding_for_ets2_img3.jpg?6590342a2db3d',
     },
+    {
+      id: 5,
+      type: 'graphics',
+      name: 'Frosty Winter',
+      link: 'https://stmods.org/euro_truck_simulator_2/mods/frosty_winter_weather_mod_v6_1_by_grimes_for_euro_truck_simulator_2_v1_26/',
+      author: 'Grimes',
+      trusted: true,
+      version: '1.49',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 2,
+          coop: true,
+        },
+      ],
+      image:
+        'https://stmods.org/euro_truck_simulator_2/mods/frosty_winter_weather_mod_v6_1_by_grimes_for_euro_truck_simulator_2_v1_26/frosty_winter_weather_mod_v7_4_by_grimes_for_ets2_v1_37_x_img1.jpg?657496a686243',
+    },
   ],
   beamng: [
     {
