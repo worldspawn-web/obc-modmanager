@@ -1,9 +1,12 @@
-import { Box, Container, Grid, Tabs, Text } from '@radix-ui/themes';
+import { Box, Container, Grid, Tabs } from '@radix-ui/themes';
 import { Header } from '../../common/header/Header';
 
 // import styles from './ETS2.module.scss';
 import { ImagesCarousel } from '../../common';
-import RenderAllMods from '../../common/render/RenderAllMods';
+import RenderAllETSMods from '../../common/render/RenderAllETSMods';
+import { RenderVehiclesETS } from '../../common/render/RenderVehiclesETS';
+import { RenderGraphicsETS } from '../../common/render/RenderGraphicsETS';
+import { RenderOtherETS } from '../../common/render/RenderOtherETS';
 
 export const ETS2 = () => {
   return (
@@ -24,24 +27,26 @@ export const ETS2 = () => {
           <Box px="4" pt="3" pb="2">
             <Tabs.Content value="all">
               <Grid mt="4" mb="2" gap="6" columns="3" justify="start">
-                {RenderAllMods()}
+                {RenderAllETSMods()}
               </Grid>
             </Tabs.Content>
 
             <Tabs.Content value="vehicles">
-              <Text size="2">Access and update your documents.</Text>
+              <Grid mt="4" mb="2" gap="6" columns="3" justify="start">
+                {RenderVehiclesETS()}
+              </Grid>
             </Tabs.Content>
 
             <Tabs.Content value="graphics">
-              <Text size="2">
-                Edit your profile or update contact information.
-              </Text>
+              <Grid mt="4" mb="2" gap="6" columns="3" justify="start">
+                {RenderGraphicsETS()}
+              </Grid>
             </Tabs.Content>
 
             <Tabs.Content value="other">
-              <Text size="2">
-                Edit your profile or update contact information.
-              </Text>
+              <Grid mt="4" mb="2" gap="6" columns="3" justify="start">
+                {RenderOtherETS()}
+              </Grid>
             </Tabs.Content>
           </Box>
         </Tabs.Root>
