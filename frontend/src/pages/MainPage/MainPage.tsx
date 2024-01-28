@@ -1,4 +1,5 @@
-import { Container, Grid, Heading, Link } from '@radix-ui/themes';
+import { Container, Grid, Heading } from '@radix-ui/themes';
+import { Link } from 'react-router-dom';
 
 import styles from './MainPage.module.scss';
 import { Header } from '../../common/header/Header';
@@ -24,7 +25,7 @@ export const MainPage = () => {
               mt="9"
               mb="9"
             >
-              <Link href="/ets2">
+              <Link to="/ets2">
                 <img
                   className={styles.category}
                   src="../src/icons/ets.png"
@@ -32,7 +33,7 @@ export const MainPage = () => {
                 />
               </Link>
 
-              <Link href="/beamng">
+              <Link to="/beamng">
                 <img
                   className={styles.category}
                   src="../src/icons/bea33mng.png"
@@ -40,7 +41,7 @@ export const MainPage = () => {
                 />
               </Link>
 
-              <Link href="/gmod">
+              <Link to="/gmod">
                 <img
                   className={styles.category}
                   src="../src/icons/gmod1.png"
@@ -48,7 +49,7 @@ export const MainPage = () => {
                 />
               </Link>
 
-              <Link href="/lethalcompany">
+              <Link to="/lethalcompany">
                 <img
                   className={styles.category}
                   src="../src/icons/lethalcompany.png"
@@ -56,7 +57,7 @@ export const MainPage = () => {
                 />
               </Link>
 
-              <Link href="/minecraft">
+              <Link to="/minecraft">
                 <img
                   className={styles.category}
                   src="../src/icons/minecraft.png"
@@ -64,7 +65,7 @@ export const MainPage = () => {
                 />
               </Link>
 
-              <Link href="/software">
+              <Link to="/software">
                 <img
                   className={styles.category}
                   src="../src/icons/software.png"
