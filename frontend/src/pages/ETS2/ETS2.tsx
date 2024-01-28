@@ -8,7 +8,7 @@ import { RenderVehiclesETS } from '../../common/render/RenderVehiclesETS';
 import { RenderGraphicsETS } from '../../common/render/RenderGraphicsETS';
 import { RenderOtherETS } from '../../common/render/RenderOtherETS';
 
-export const ETS2 = () => {
+const ETS2 = () => {
   return (
     <Container>
       <Header />
@@ -54,3 +54,5 @@ export const ETS2 = () => {
     </Container>
   );
 };
+
+export default ETS2;
