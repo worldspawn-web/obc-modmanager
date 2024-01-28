@@ -1,6 +1,7 @@
 .card__image {
-  height: 175px;
-  width: 280px;
+  min-height: 175px;
+  min-width: 18rem;
+  overflow: hidden;
 }
 
 .card-body {
