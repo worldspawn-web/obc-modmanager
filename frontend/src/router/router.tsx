@@ -1,8 +1,9 @@
-import { FC } from 'react';
+import { FC, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { routenames } from './routenames';
 import MainPage from '../pages/MainPage/MainPage';
-import { ETS2 } from '../pages';
+
+const ETS2 = lazy(() => import('../pages/ETS2/ETS2'));
 
 export const Router: FC = () => (
   <Routes>
