@@ -6,8 +6,14 @@ import { Button, Card } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
 import RenderOtherStats from '../stats/RenderOtherStats';
+import { RenderNoMods } from './RenderNoMods';
 
 export const RenderOtherETS = () => {
+  const otherMods = modsStore.ets2.filter((mod) => mod.type === 'other');
+  if (otherMods.length === 0) {
+    return <RenderNoMods />;
+  }
+  // TODO: change to otherMods iteration
   return modsStore.ets2.map((mod) => {
     if (mod.type === 'other') {
       const { id, name, link, trusted, version, stats, image } = mod;

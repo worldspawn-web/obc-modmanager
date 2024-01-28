@@ -6,8 +6,12 @@ import RenderVehicleStats from '../stats/RenderVehicleStats';
 import styles from './RenderAllETSMods.module.scss';
 import { Link } from 'react-router-dom';
 import RenderOtherStats from '../stats/RenderOtherStats';
+import { RenderNoMods } from './RenderNoMods';
 
 const RenderAllETSMods = () => {
+  if (modsStore.ets2.length === 0) {
+    return <RenderNoMods />;
+  }
   return modsStore.ets2.map((mod) => {
     const {
       id,
