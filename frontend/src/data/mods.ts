@@ -135,6 +135,126 @@ const modsStore = {
       image:
         'https://stmods.org/euro_truck_simulator_2/mods/frosty_winter_weather_mod_v6_1_by_grimes_for_euro_truck_simulator_2_v1_26/frosty_winter_weather_mod_v7_4_by_grimes_for_ets2_v1_37_x_img1.jpg?657496a686243',
     },
+    {
+      id: 6,
+      type: 'graphics',
+      name: 'Frosty Physics',
+      link: 'https://stmods.org/euro_truck_simulator_2/mods/frosty_physics_by_grimes_for_ets2/',
+      author: 'Grimes',
+      trusted: true,
+      version: '1.49',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 5,
+          coop: true,
+        },
+      ],
+      image:
+        'https://stmods.org/euro_truck_simulator_2/mods/frosty_physics_by_grimes_for_ets2/frosty_physics_by_grimes_for_ets2_img1.jpg?65749703b8f58',
+    },
+    {
+      id: 7,
+      type: 'graphics',
+      name: 'Frosty Wheels',
+      link: 'https://modsfire.com/KTMFa035unSuD39',
+      author: 'Grimes',
+      trusted: true,
+      version: '1.49',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 5,
+          coop: true,
+        },
+      ],
+      image:
+        'https://upload.forumfree.net/i/bf1156865/ets2_20201205_101203_00.png',
+    },
+    {
+      id: 8,
+      type: 'other',
+      name: 'Yandex Navigator Russian Voices (GPS)',
+      link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1762588253',
+      author: 'Crynnar',
+      trusted: true,
+      version: 'Steam',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 5,
+          coop: true,
+        },
+      ],
+      image:
+        'https://steamuserimages-a.akamaihd.net/ugc/796488803082048793/2FA161212CE5297D18A65E543E75FE3CE97AC955/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
+    },
+    {
+      id: 9,
+      type: 'other',
+      name: 'Yandex Navigator Night Version',
+      link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1777713125',
+      author: 'Sinagrit Baba',
+      trusted: true,
+      version: 'Steam',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 5,
+          coop: true,
+        },
+      ],
+      image:
+        'https://steamuserimages-a.akamaihd.net/ugc/778475333593119580/230432FF0484CD2AD78C4A40A3AD8FA8998B66D0/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
+    },
+    {
+      id: 10,
+      type: 'other',
+      name: 'Radar Detector',
+      link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2857542840',
+      author: 'Garage-J1',
+      trusted: true,
+      version: 'Steam',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 5,
+          coop: true,
+        },
+      ],
+      image:
+        'https://steamuserimages-a.akamaihd.net/ugc/2219773166235753539/601D48AE8F989D677D15A9C538A92950ADCD2D3F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
+    },
+    {
+      id: 11,
+      type: 'other',
+      name: 'No Fences',
+      link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=913244812',
+      author: '松原みき MIKI MATSUBARA',
+      trusted: true,
+      version: 'Steam',
+      status: 'Active',
+      stats: [
+        {
+          quality: 5,
+          fps: 5,
+          size: 5,
+          coop: true,
+        },
+      ],
+      image:
+        'https://steamuserimages-a.akamaihd.net/ugc/824566056086366475/315D8ABB84E8A30BB7CA7F1C2973A8973158BC34/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
+    },
   ],
   beamng: [
     {
