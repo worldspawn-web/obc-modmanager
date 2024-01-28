@@ -6,4 +6,5 @@ export const routenames = {
   MINECRAFT: '/minecraft',
   LETHALCOMPANY: '/lethalcompany',
   SOFTWARE: '/software',
+  NOT_FOUND: '*',
 };
