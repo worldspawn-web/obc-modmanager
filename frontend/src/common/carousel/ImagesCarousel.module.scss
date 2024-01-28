@@ -6,4 +6,10 @@
 .carousel__image {
   max-height: 400px;
   max-width: 1200px;
+  overflow: hidden;
+}
+
+.carousel__img {
+  object-fit: cover;
+  width: 100%;
 }
