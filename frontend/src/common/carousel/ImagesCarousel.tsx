@@ -11,8 +11,8 @@ export const ImagesCarousel = () => {
           className={styles.carousel__img}
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Only Quality Mods</h3>
+          <p>Every mod that appears here - has completed the verification.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className={styles.carousel__image}>
@@ -22,21 +22,22 @@ export const ImagesCarousel = () => {
           className={styles.carousel__img}
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Easy Download</h3>
+          <p>
+            It doesn't matter if you want to download only one or everything. We
+            got you.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className={styles.carousel__image}>
         <img
-          src="../public/banner.jpg"
+          src="../public/cabin_interior.jpg"
           alt="123"
           className={styles.carousel__img}
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Comfortable Deliveries</h3>
+          <p>Just relax and drive through the Europe.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
