@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Tabs } from '@radix-ui/themes';
 import { Header } from '../../common/header/Header';
 
-// import styles from './ETS2Page.module.scss';
+import styles from './ETS2Page.module.scss';
 import { ImagesCarousel } from '../../common';
 import RenderAllETSMods from '../../common/render/RenderAllETSMods';
 import { RenderVehiclesETS } from '../../common/render/RenderVehiclesETS';
@@ -16,6 +16,7 @@ const ETS2 = () => {
         <ImagesCarousel />
       </Container>
       <Container mt="8">
+        <span className={styles.lastupdate}>Last update: N/A</span>
         <Tabs.Root defaultValue="all">
           <Tabs.List>
             <Tabs.Trigger value="all">All</Tabs.Trigger>
