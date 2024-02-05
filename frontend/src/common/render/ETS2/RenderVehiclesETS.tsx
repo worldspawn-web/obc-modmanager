@@ -1,11 +1,11 @@
-import modsStore from '../../data/mods';
+import modsStore from '../../../data/mods';
 import styles from './RenderAllETSMods.module.scss';
 
 import { Badge, Dialog, Flex } from '@radix-ui/themes';
 import { Button, Card } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
-import RenderVehicleStats from '../stats/RenderVehicleStats';
+import RenderVehicleStats from '../../stats/RenderVehicleStats';
 
 export const RenderVehiclesETS = () => {
   return modsStore.ets2.map((mod) => {

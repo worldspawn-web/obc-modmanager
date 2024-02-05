@@ -3,10 +3,10 @@ import { Header } from '../../common/header/Header';
 
 import styles from './ETS2Page.module.scss';
 import { ImagesCarousel } from '../../common';
-import RenderAllETSMods from '../../common/render/RenderAllETSMods';
-import { RenderVehiclesETS } from '../../common/render/RenderVehiclesETS';
-import { RenderGraphicsETS } from '../../common/render/RenderGraphicsETS';
-import { RenderOtherETS } from '../../common/render/RenderOtherETS';
+import RenderAllETSMods from '../../common/render/ETS2/RenderAllETSMods';
+import { RenderVehiclesETS } from '../../common/render/ETS2/RenderVehiclesETS';
+import { RenderGraphicsETS } from '../../common/render/ETS2/RenderGraphicsETS';
+import { RenderOtherETS } from '../../common/render/ETS2/RenderOtherETS';
 
 const ETS2 = () => {
   return (

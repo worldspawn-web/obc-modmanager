@@ -1,21 +1,15 @@
-import modsStore from '../../data/mods';
+import modsStore from '../../../data/mods';
 import styles from './RenderAllETSMods.module.scss';
 
 import { Badge, Dialog, Flex } from '@radix-ui/themes';
 import { Button, Card } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
-import RenderOtherStats from '../stats/RenderOtherStats';
-import { RenderNoMods } from './RenderNoMods';
+import RenderOtherStats from '../../stats/RenderOtherStats';
 
-export const RenderOtherETS = () => {
-  const otherMods = modsStore.ets2.filter((mod) => mod.type === 'other');
-  if (otherMods.length === 0) {
-    return <RenderNoMods />;
-  }
-  // TODO: change to otherMods iteration
+export const RenderGraphicsETS = () => {
   return modsStore.ets2.map((mod) => {
-    if (mod.type === 'other') {
+    if (mod.type === 'graphics') {
       const { id, name, link, trusted, version, stats, image } = mod;
 
       return (

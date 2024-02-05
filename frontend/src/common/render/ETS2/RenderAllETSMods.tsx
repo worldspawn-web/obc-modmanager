@@ -1,11 +1,11 @@
 import { Button, Card } from 'react-bootstrap';
-import modsStore from '../../data/mods';
+import modsStore from '../../../data/mods';
 import { Badge, Dialog, Flex } from '@radix-ui/themes';
-import RenderVehicleStats from '../stats/RenderVehicleStats';
+import RenderVehicleStats from '../../stats/RenderVehicleStats';
 
 import styles from './RenderAllETSMods.module.scss';
 import { Link } from 'react-router-dom';
-import RenderOtherStats from '../stats/RenderOtherStats';
+import RenderOtherStats from '../../stats/RenderOtherStats';
 import { RenderNoMods } from './RenderNoMods';
 
 const RenderAllETSMods = () => {
