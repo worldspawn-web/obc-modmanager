@@ -1,4 +1,4 @@
-import modsStore from '../../../data/mods';
+import modsStore from '../../../data/ETSMods';
 import styles from './RenderAllETSMods.module.scss';
 
 import { Badge, Dialog, Flex } from '@radix-ui/themes';

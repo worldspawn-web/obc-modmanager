@@ -1,5 +1,5 @@
 import { Button, Card } from 'react-bootstrap';
-import modsStore from '../../../data/mods';
+import modsStore from '../../../data/ETSMods';
 import { Badge, Dialog, Flex } from '@radix-ui/themes';
 import RenderVehicleStats from '../../stats/RenderVehicleStats';
 
